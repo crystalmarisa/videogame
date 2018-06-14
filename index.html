@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+
+    <!-- Title -->
+    <title>Faerie Dreams</title>
+
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/d3/20/e2/d320e237f9d15ac2a8b1ba7c1e2c214f.jpg">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Script tag -->
+    <script src="game.js"></script>
+</head>
+<body>
+    
+    <h1>Faerie Dreams</h1>
+    <div id="container">
+        <canvas id="gc" style="display: none" height="300px" width="300px"></canvas>
+        <div id="overlay1">
+            <p>Use the arrow keys to move. Collect 25 bottles of faerie dust while staying away from the raindrops!</p>
+            <button onclick="startGame()">Start</button>
+        </div>
+        <div id="overlay2" style="display: none">
+            <p>You win!</p>
+            <button onclick="reset()">Play Again</button>
+        </div>
+        <div id="overlay3" style="display: none">
+            <p>You didn't make it :(</p>
+            <button onclick="reset()">Play Again</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
